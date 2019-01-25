@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 1063371975}
   - component: {fileID: 1063371974}
   - component: {fileID: 1063371973}
+  - component: {fileID: 2933029900722208697}
   - component: {fileID: 1063371972}
   - component: {fileID: 1063371971}
   m_Layer: 9
@@ -273,6 +274,20 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2933029900722208697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063371970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a39d3cbd1a605a046bc349942935882c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pivotPos: {fileID: 731085661307867243}
+  ObjectsInHand: []
 --- !u!114 &1063371972
 MonoBehaviour:
   m_ObjectHideFlags: 0

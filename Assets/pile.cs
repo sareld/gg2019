@@ -9,12 +9,7 @@ public class pile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 4; i++)
-        {
-            float y = o.GetComponent<Collider>().bounds.size.z;
-            GameObject newObj = Instantiate(o, this.transform.position+new Vector3(0,y,0)*i, Quaternion.identity);
-            newObj.transform.parent = this.transform;
-        }
+
 
     }
 
@@ -23,12 +18,15 @@ public class pile : MonoBehaviour
         objects.AddRange(adds);
 
         objects[0].transform.position = this.transform.position;
+        objects[0].transform.parent = this.transform;
+        objects[0].tag = "handPile";
 
-        for(int i = 1; i<objects.Count;i++)
+        for (int i = 1; i<objects.Count;i++)
         {
-            float y = (objects[i - 1].transform.position.y - this.transform.position.y) + objects[i-1].GetComponent<Collider>().bounds.size.y/2;
+            float y = (objects[i - 1].transform.position.y - this.transform.position.y) + objects[i-1].GetComponent<Collider>().bounds.size.y;
             objects[i].transform.position = this.transform.position + new Vector3(0, y, 0);
             objects[i].transform.parent = this.transform;
+            objects[i].tag = "";
         }
 
     }
