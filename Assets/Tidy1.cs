@@ -60,6 +60,7 @@ public class Tidy1 : MonoBehaviour
                 {
                     print("full hands");
                     GameObject mypile = GameObject.Find("pile");
+                    mypile.tag = "freePile";
                     mypile.transform.parent = null;
                     handsFree = true;
 
