@@ -3,7 +3,6 @@
     Properties
     {
         _Color ("Color", Color) = (1,1,1,1)
-        _DirtFactor ("Dirt", Range(0,1)) = 0.5
         _MainTex ("Floor (RGB)", 2D) = "white" {}
         _DirtTex ("Dirt (RGB)", 2D) = "white" {}
         _MaskTex ("MASK (R)", 2D) = "white" {}
@@ -35,7 +34,6 @@
         half _Glossiness;
         half _Metallic;
         fixed4 _Color;
-        half _DirtFactor;
 
         // Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
         // See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
@@ -47,10 +45,10 @@
         void surf (Input IN, inout SurfaceOutputStandard o)
         {
             // Albedo comes from a texture tinted by color
-            fixed4 main = tex2D (_MainTex, IN.uv_MainTex);
-            fixed dirt = tex2D (_DirtTex, IN.uv_DirtTex);
             fixed4 mask = tex2D (_MaskTex, IN.uv_MaskTex);
-            fixed4 c = (main - (dirt * mask * _DirtFactor)) * _Color;
+            fixed4 main = tex2D (_MainTex, IN.uv_MainTex);
+            fixed4 dirt = (float4(1,1,1,1) * (1-mask.r)) + (tex2D (_DirtTex, IN.uv_DirtTex) * mask.r);
+            fixed4 c = main * dirt * _Color;
             o.Albedo = c.rgb;
             // Metallic and smoothness come from slider variables
             o.Metallic = _Metallic;
