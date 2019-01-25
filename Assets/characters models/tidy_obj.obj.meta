@@ -1,43 +1,40 @@
 fileFormatVersion: 2
-guid: 28bf4244a2890f34ea6f67794051536a
+guid: cd3f086c34a6ef444bd8e93031f395b7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Box001
-    100004: Box002
-    100006: Box003
-    100008: Box004
-    100010: Cylinder001
-    100012: Cylinder002
-    400000: //RootNode
-    400002: Box001
-    400004: Box002
-    400006: Box003
-    400008: Box004
-    400010: Cylinder001
-    400012: Cylinder002
-    2100000: No Name
-    2100002: 'Material #47'
-    2300000: Box001
-    2300002: Box002
-    2300004: Box003
-    2300006: Box004
-    2300008: Cylinder001
-    2300010: Cylinder002
-    3300000: Box001
-    3300002: Box002
-    3300004: Box003
-    3300006: Box004
-    3300008: Cylinder001
-    3300010: Cylinder002
-    4300000: Box001
-    4300002: Box002
-    4300004: Cylinder001
-    4300006: Cylinder002
-    4300008: Box003
-    4300010: Box004
-    2186277476908879412: ImportLogs
+    100000: body
+    100002: face_hair
+    100004: face_left_eye
+    100006: face_right_eye
+    100008: mouth_face
+    100010: //RootNode
+    400000: body
+    400002: face_hair
+    400004: face_left_eye
+    400006: face_right_eye
+    400008: mouth_face
+    400010: //RootNode
+    2100000: lambert5SG
+    2100002: lambert4SG
+    2100004: lambert2SG
+    2100006: lambert3SG
+    2100008: clean_lambert3SG
+    2300000: body
+    2300002: face_hair
+    2300004: face_left_eye
+    2300006: face_right_eye
+    2300008: mouth_face
+    3300000: body
+    3300002: face_hair
+    3300004: face_left_eye
+    3300006: face_right_eye
+    3300008: mouth_face
+    4300000: body
+    4300002: face_hair
+    4300004: face_left_eye
+    4300006: face_right_eye
+    4300008: mouth_face
   externalObjects: {}
   materials:
     importMaterials: 1

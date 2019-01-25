@@ -1,42 +1,54 @@
 fileFormatVersion: 2
-guid: 28bf4244a2890f34ea6f67794051536a
+guid: 01af4fe87ec0dfe4590eb1a289485867
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Box001
-    100004: Box002
-    100006: Box003
-    100008: Box004
-    100010: Cylinder001
-    100012: Cylinder002
-    400000: //RootNode
-    400002: Box001
-    400004: Box002
-    400006: Box003
-    400008: Box004
-    400010: Cylinder001
-    400012: Cylinder002
-    2100000: No Name
-    2100002: 'Material #47'
-    2300000: Box001
-    2300002: Box002
-    2300004: Box003
-    2300006: Box004
-    2300008: Cylinder001
-    2300010: Cylinder002
-    3300000: Box001
-    3300002: Box002
-    3300004: Box003
-    3300006: Box004
-    3300008: Cylinder001
-    3300010: Cylinder002
-    4300000: Box001
-    4300002: Box002
-    4300004: Cylinder001
-    4300006: Cylinder002
-    4300008: Box003
-    4300010: Box004
+    100000: body
+    100002: //RootNode
+    100004: face_hair
+    100006: face_left_brow
+    100008: face_left_eye
+    100010: face_mouth
+    100012: face_right_eye
+    100014: mop
+    100016: right_brow_face
+    400000: body
+    400002: //RootNode
+    400004: face_hair
+    400006: face_left_brow
+    400008: face_left_eye
+    400010: face_mouth
+    400012: face_right_eye
+    400014: mop
+    400016: right_brow_face
+    2100000: clean_lambert4SG
+    2100002: clean_lambert2SG
+    2100004: clean_lambert3SG
+    2100006: initialShadingGroup
+    2300000: body
+    2300002: face_hair
+    2300004: face_left_brow
+    2300006: face_left_eye
+    2300008: face_mouth
+    2300010: face_right_eye
+    2300012: mop
+    2300014: right_brow_face
+    3300000: body
+    3300002: face_hair
+    3300004: face_left_brow
+    3300006: face_left_eye
+    3300008: face_mouth
+    3300010: face_right_eye
+    3300012: mop
+    3300014: right_brow_face
+    4300000: body
+    4300002: face_hair
+    4300004: face_left_brow
+    4300006: face_left_eye
+    4300008: face_mouth
+    4300010: face_right_eye
+    4300012: mop
+    4300014: right_brow_face
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:

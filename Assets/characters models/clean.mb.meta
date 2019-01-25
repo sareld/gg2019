@@ -1,42 +1,86 @@
 fileFormatVersion: 2
-guid: 28bf4244a2890f34ea6f67794051536a
+guid: 26d629652ea69f84baa1685d9ae5462d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Box001
-    100004: Box002
-    100006: Box003
-    100008: Box004
-    100010: Cylinder001
-    100012: Cylinder002
-    400000: //RootNode
-    400002: Box001
-    400004: Box002
-    400006: Box003
-    400008: Box004
-    400010: Cylinder001
-    400012: Cylinder002
-    2100000: No Name
-    2100002: 'Material #47'
-    2300000: Box001
-    2300002: Box002
-    2300004: Box003
-    2300006: Box004
-    2300008: Cylinder001
-    2300010: Cylinder002
-    3300000: Box001
-    3300002: Box002
-    3300004: Box003
-    3300006: Box004
-    3300008: Cylinder001
-    3300010: Cylinder002
-    4300000: Box001
-    4300002: Box002
-    4300004: Cylinder001
-    4300006: Cylinder002
-    4300008: Box003
-    4300010: Box004
+    100000: body
+    100002: //RootNode
+    100004: hair
+    100006: left_brow
+    100008: left_eye
+    100010: mouth
+    100012: right_brow
+    100014: right_eye
+    100016: face
+    100018: left_arm1
+    100020: left_arm2
+    100022: left_arm3
+    100024: left_leg1
+    100026: left_leg2
+    100028: left_leg3
+    100030: left_leg4
+    100032: right_arm1
+    100034: right_arm2
+    100036: right_arm3
+    100038: right_leg1
+    100040: right_leg2
+    100042: right_leg3
+    100044: right_leg4
+    100046: root
+    100048: mop
+    400000: body
+    400002: //RootNode
+    400004: hair
+    400006: left_brow
+    400008: left_eye
+    400010: mouth
+    400012: right_brow
+    400014: right_eye
+    400016: face
+    400018: left_arm1
+    400020: left_arm2
+    400022: left_arm3
+    400024: left_leg1
+    400026: left_leg2
+    400028: left_leg3
+    400030: left_leg4
+    400032: right_arm1
+    400034: right_arm2
+    400036: right_arm3
+    400038: right_leg1
+    400040: right_leg2
+    400042: right_leg3
+    400044: right_leg4
+    400046: root
+    400048: mop
+    2100000: clean_facial_features
+    2100002: clean_clean_dark
+    2100004: clean_clean
+    2100006: lambert1
+    2300000: body
+    2300002: hair
+    2300004: left_brow
+    2300006: left_eye
+    2300008: mouth
+    2300010: right_brow
+    2300012: right_eye
+    2300014: mop
+    3300000: body
+    3300002: hair
+    3300004: left_brow
+    3300006: left_eye
+    3300008: mouth
+    3300010: right_brow
+    3300012: right_eye
+    3300014: mop
+    4300000: left_eye
+    4300002: right_eye
+    4300004: left_brow
+    4300006: mouth
+    4300008: right_brow
+    4300010: hair
+    4300012: body
+    4300014: mop
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:

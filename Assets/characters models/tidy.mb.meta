@@ -1,42 +1,74 @@
 fileFormatVersion: 2
-guid: 28bf4244a2890f34ea6f67794051536a
+guid: 42d138e4a476ae34aa6f8505d31cb4be
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Box001
-    100004: Box002
-    100006: Box003
-    100008: Box004
-    100010: Cylinder001
-    100012: Cylinder002
-    400000: //RootNode
-    400002: Box001
-    400004: Box002
-    400006: Box003
-    400008: Box004
-    400010: Cylinder001
-    400012: Cylinder002
-    2100000: No Name
-    2100002: 'Material #47'
-    2300000: Box001
-    2300002: Box002
-    2300004: Box003
-    2300006: Box004
-    2300008: Cylinder001
-    2300010: Cylinder002
-    3300000: Box001
-    3300002: Box002
-    3300004: Box003
-    3300006: Box004
-    3300008: Cylinder001
-    3300010: Cylinder002
-    4300000: Box001
-    4300002: Box002
-    4300004: Cylinder001
-    4300006: Cylinder002
-    4300008: Box003
-    4300010: Box004
+    100000: body
+    100002: face
+    100004: hair
+    100006: head
+    100008: left_arm1
+    100010: left_arm2
+    100012: left_arm3
+    100014: left_eye
+    100016: left_leg1
+    100018: left_leg2
+    100020: left_leg3
+    100022: left_leg4
+    100024: mouth
+    100026: right_arm1
+    100028: right_arm2
+    100030: right_arm3
+    100032: right_eye
+    100034: right_leg1
+    100036: right_leg2
+    100038: right_leg3
+    100040: right_leg4
+    100042: root
+    100044: //RootNode
+    400000: body
+    400002: face
+    400004: hair
+    400006: head
+    400008: left_arm1
+    400010: left_arm2
+    400012: left_arm3
+    400014: left_eye
+    400016: left_leg1
+    400018: left_leg2
+    400020: left_leg3
+    400022: left_leg4
+    400024: mouth
+    400026: right_arm1
+    400028: right_arm2
+    400030: right_arm3
+    400032: right_eye
+    400034: right_leg1
+    400036: right_leg2
+    400038: right_leg3
+    400040: right_leg4
+    400042: root
+    400044: //RootNode
+    2100000: tidy_dark
+    2100002: boots
+    2100004: mittens
+    2100006: lambert3
+    2100008: facial_features
+    2300000: hair
+    2300002: left_eye
+    2300004: mouth
+    2300006: right_eye
+    3300000: hair
+    3300002: left_eye
+    3300004: mouth
+    3300006: right_eye
+    4300000: body
+    4300002: mouth
+    4300004: right_eye
+    4300006: left_eye
+    4300008: hair
+    9500000: //RootNode
+    13700000: body
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -91,10 +123,10 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
@@ -118,7 +150,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
