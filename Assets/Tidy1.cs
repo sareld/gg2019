@@ -6,10 +6,9 @@ public class Tidy1 : MonoBehaviour
 {
 
     private bool ObjInHand = false;
-    public Transform pivotPos;
     public List<GameObject> ObjectsInHand;
     public float radius = 2f;
-        
+
     private bool handsFree = true;
     private bool keyIsDown = false;
 
@@ -17,7 +16,7 @@ public class Tidy1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
