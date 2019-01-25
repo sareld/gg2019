@@ -13,6 +13,15 @@ public class pile : MonoBehaviour
 
     }
 
+    public void clear()
+    {
+        foreach (Transform child in this.transform)
+        {
+            objects.Clear();
+            GameObject.Destroy(child.gameObject);
+        }
+    }
+
     public void add(List<GameObject> adds)
     {
         objects.AddRange(adds);
@@ -26,7 +35,7 @@ public class pile : MonoBehaviour
             float y = (objects[i - 1].transform.position.y - this.transform.position.y) + objects[i-1].GetComponent<Collider>().bounds.size.y;
             objects[i].transform.position = this.transform.position + new Vector3(0, y, 0);
             objects[i].transform.parent = this.transform;
-            objects[i].tag = "";
+            objects[0].tag = "handPile";
         }
 
     }
