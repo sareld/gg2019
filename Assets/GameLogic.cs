@@ -5,20 +5,17 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameLogic : MonoBehaviour
-
 {
     
     private Scene level;
     [SerializeField] private float timer;
-    [SerializeField] private Text uiText;
-    private bool canCount = true;
+    public Text uiText;
+    public bool canCount = true;
     public float timeInit = 10f;
     // Start is called before the first frame update
     void Start()
     {
-
-        
-
+        canCount = false;
     }
 
     // Update is called once per frame
@@ -27,15 +24,21 @@ public class GameLogic : MonoBehaviour
         if (timer > 0f && canCount)
         {
             timer -= Time.deltaTime;
-            uiText.text = timer.ToString("f");
 
+            int minutes = Mathf.RoundToInt(Mathf.Floor(timer / 60));
+            int seconds = Mathf.RoundToInt(timer%60);
+
+            uiText.text = minutes.ToString()+":"+seconds.ToString();
+            //uiText.text = timer.ToString("f");
+    
         }
         
 
         if (timer < 0)
         {
+            uiText.text = "TimeOut!!!";
             timer = 0;
-            SceneManager.LoadScene("clean experiment");
+            SceneManager.LoadScene("main");
             timer = timeInit;
         }
         
