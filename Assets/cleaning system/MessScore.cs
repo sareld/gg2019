@@ -39,7 +39,7 @@ public class MessScore : MonoBehaviour
         }
         score = score / (tex.width * tex.height);
         score = score / maxSquer *100;
-        //print(score);
+        print(score);
     }
     void OnGUI()
     {
