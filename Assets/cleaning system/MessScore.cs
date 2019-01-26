@@ -7,6 +7,8 @@ public class MessScore : MonoBehaviour
     public bool reverse = true;
     public Slider slider;
 
+    public GameObject floor;
+
     public RenderTexture dirtTex;
     public Texture2D tex;
     public float score;
@@ -23,9 +25,9 @@ public class MessScore : MonoBehaviour
         float maxSquer = 0;
         foreach(GameObject obj in GameObject.FindGameObjectsWithTag("freeObj"))
         {
-            maxSquer += obj.GetComponent<Collider>().bounds.size.x* obj.GetComponent<Collider>().bounds.size.z;
-        }
+            maxSquer += (obj.transform.localScale.x* obj.transform.localScale.z) / (floor.GetComponent<Renderer>().bounds.size.z * floor.GetComponent<Renderer>().bounds.size.x);
 
+        }
         RenderTexture.active = dirtTex;
         tex.ReadPixels(new Rect(0, 0, tex.width, tex.height), 0, 0);
         for(int i = 0; i < tex.width; i++){
@@ -35,9 +37,8 @@ public class MessScore : MonoBehaviour
                 }
             }
         }
-        
-        score = score/maxSquer*100f;
-        print(maxSquer);
+        score = score / (tex.width * tex.height);
+        score = score / maxSquer *100;
         //print(score);
     }
     void OnGUI()

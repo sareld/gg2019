@@ -7,7 +7,8 @@ public class Tidy : MonoBehaviour
 
 
     public AudioClip drop;
-    public AudioClip pickup;
+
+    private AudioSource source;
 
     private bool ObjInHand = false;
     public List<GameObject> ObjectsInHand;
@@ -19,7 +20,7 @@ public class Tidy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -97,6 +98,7 @@ public class Tidy : MonoBehaviour
                 }
                 else if (!handsFree)
                 {
+                    source.PlayOneShot(drop);
                     pile myPile = GetComponentInChildren<pile>();
                     print("Not close to");
                     GameObject newPile = Instantiate(myPile.gameObject, this.transform);
