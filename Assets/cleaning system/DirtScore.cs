@@ -7,6 +7,7 @@ public class DirtScore : MonoBehaviour
     public RenderTexture dirtTex;
     public Texture2D tex;
     public float score;
+    public float minScore = 15;
     public float maxScore = 65536;
     private void Awake()
     {
@@ -22,11 +23,12 @@ public class DirtScore : MonoBehaviour
                 score+=tex.GetPixel(i,j).r;
             }
         }
-        score = score/maxScore;
+        score = score;
     }
     public GUIStyle style;
     void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 100, 20),"dirt % "+ Mathf.RoundToInt(score*100).ToString(), style);
+        int percent = Mathf.RoundToInt((Mathf.Clamp01((score - minScore) / maxScore) * 100));
+        GUI.Label(new Rect(10, 10, 100, 50),"dirt % "+ percent.ToString(), style);
     }
 }

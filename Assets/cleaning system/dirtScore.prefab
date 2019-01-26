@@ -46,7 +46,8 @@ MonoBehaviour:
   dirtTex: {fileID: 8400000, guid: 7ee3f1527363b8c498bcdf57a866a2dd, type: 2}
   tex: {fileID: 0}
   score: 0
-  maxScore: 65536
+  minScore: 250
+  maxScore: 30000
   style:
     m_Name: 
     m_Normal:

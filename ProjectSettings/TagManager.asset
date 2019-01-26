@@ -8,6 +8,8 @@ TagManager:
   - freeObj
   - freePile
   - handPile
+  - P1
+  - P2
   layers:
   - Default
   - TransparentFX
@@ -20,8 +22,8 @@ TagManager:
   - PostProcessing
   - clean-character
   - claen-mop
-  - 
-  - 
+  - cleaning-system
+  - mess
   - 
   - 
   - 
