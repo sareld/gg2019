@@ -15,7 +15,7 @@ public class GameLogic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        canCount = false;
+        //canCount = false;
     }
 
     // Update is called once per frame
@@ -28,18 +28,16 @@ public class GameLogic : MonoBehaviour
             int minutes = Mathf.RoundToInt(Mathf.Floor(timer / 60));
             int seconds = Mathf.RoundToInt(timer%60);
 
-            uiText.text = minutes.ToString()+":"+seconds.ToString();
-            //uiText.text = timer.ToString("f");
-    
+            uiText.text = minutes.ToString()+":"+seconds.ToString();    
         }
         
 
         if (timer < 0)
         {
             uiText.text = "TimeOut!!!";
-            timer = 0;
-            SceneManager.LoadScene("main");
-            timer = timeInit;
+            //timer = 0;
+            //SceneManager.LoadScene("main");
+            //timer = timeInit;
         }
         
     }

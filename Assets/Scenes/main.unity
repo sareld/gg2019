@@ -143,6 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 114
   uiText: {fileID: 1618464790}
+  canCount: 1
   timeInit: 10
 --- !u!4 &28174406
 Transform:
