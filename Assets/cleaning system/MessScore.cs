@@ -9,7 +9,7 @@ public class MessScore : MonoBehaviour
 
     public RenderTexture dirtTex;
     public Texture2D tex;
-    public int score;
+    public float score;
 
     public float minScore = 6553;
     public float maxScore = 65536;
@@ -20,6 +20,12 @@ public class MessScore : MonoBehaviour
     private void Update()
     {
         score = 0;
+        float maxSquer = 0;
+        foreach(GameObject obj in GameObject.FindGameObjectsWithTag("freeObj"))
+        {
+            maxSquer += obj.GetComponent<Collider>().bounds.size.x* obj.GetComponent<Collider>().bounds.size.z;
+        }
+
         RenderTexture.active = dirtTex;
         tex.ReadPixels(new Rect(0, 0, tex.width, tex.height), 0, 0);
         for(int i = 0; i < tex.width; i++){
@@ -29,7 +35,10 @@ public class MessScore : MonoBehaviour
                 }
             }
         }
-        score = score;
+        
+        score = score/maxSquer*100f;
+        print(maxSquer);
+        //print(score);
     }
     void OnGUI()
     {

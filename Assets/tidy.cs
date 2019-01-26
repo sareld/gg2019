@@ -5,6 +5,10 @@ using UnityEngine;
 public class Tidy : MonoBehaviour
 {
 
+
+    public AudioClip drop;
+    public AudioClip pickup;
+
     private bool ObjInHand = false;
     public List<GameObject> ObjectsInHand;
     public float radius = 2f;
