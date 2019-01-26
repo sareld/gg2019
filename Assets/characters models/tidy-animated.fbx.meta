@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 42d138e4a476ae34aa6f8505d31cb4be
+guid: 28e9e180a5ffbbd4787f12f7a2cbdda3
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -15,18 +15,18 @@ ModelImporter:
     100018: left_leg2
     100020: left_leg3
     100022: left_leg4
-    100024: mouth
-    100026: right_arm1
-    100028: right_arm2
-    100030: right_arm3
-    100032: right_eye
-    100034: right_leg1
-    100036: right_leg2
-    100038: right_leg3
-    100040: right_leg4
-    100042: root
-    100044: //RootNode
-    100046: luggage_marker
+    100024: luggage_marker
+    100026: mouth
+    100028: right_arm1
+    100030: right_arm2
+    100032: right_arm3
+    100034: right_eye
+    100036: right_leg1
+    100038: right_leg2
+    100040: right_leg3
+    100042: right_leg4
+    100044: root
+    100046: //RootNode
     400000: body
     400002: face
     400004: hair
@@ -39,18 +39,18 @@ ModelImporter:
     400018: left_leg2
     400020: left_leg3
     400022: left_leg4
-    400024: mouth
-    400026: right_arm1
-    400028: right_arm2
-    400030: right_arm3
-    400032: right_eye
-    400034: right_leg1
-    400036: right_leg2
-    400038: right_leg3
-    400040: right_leg4
-    400042: root
-    400044: //RootNode
-    400046: luggage_marker
+    400024: luggage_marker
+    400026: mouth
+    400028: right_arm1
+    400030: right_arm2
+    400032: right_arm3
+    400034: right_eye
+    400036: right_leg1
+    400038: right_leg2
+    400040: right_leg3
+    400042: right_leg4
+    400044: root
+    400046: //RootNode
     2100000: tidy_dark
     2100002: boots
     2100004: mittens
@@ -59,14 +59,14 @@ ModelImporter:
     2100010: lambert1
     2300000: hair
     2300002: left_eye
-    2300004: mouth
-    2300006: right_eye
-    2300008: luggage_marker
+    2300004: luggage_marker
+    2300006: mouth
+    2300008: right_eye
     3300000: hair
     3300002: left_eye
-    3300004: mouth
-    3300006: right_eye
-    3300008: luggage_marker
+    3300004: luggage_marker
+    3300006: mouth
+    3300008: right_eye
     4300000: body
     4300002: mouth
     4300004: right_eye
@@ -76,7 +76,6 @@ ModelImporter:
     7400000: Take 001
     9500000: //RootNode
     13700000: body
-    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -129,11 +128,11 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 0.01
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 1
+    normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0

@@ -390,8 +390,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468429823}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.12, z: 25.92}
-  m_LocalScale: {x: 43.410843, y: 24.898703, z: 24.073}
+  m_LocalPosition: {x: 0, y: -0.1, z: 109}
+  m_LocalScale: {x: 284.0241, y: 162.90474, z: 157.50241}
   m_Children: []
   m_Father: {fileID: 534669905}
   m_RootOrder: 0
@@ -663,18 +663,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796151381}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &808114181 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5140658788913115028, guid: 36cca246784d33f4bb19feab72f00d2f,
-    type: 3}
-  m_PrefabInstance: {fileID: 5140658788642928529}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &854357878
 GameObject:
   m_ObjectHideFlags: 0
@@ -6246,6 +6234,18 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1934954387 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2703908973294360787, guid: 36cca246784d33f4bb19feab72f00d2f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5140658788642928529}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2066462872
 GameObject:
   m_ObjectHideFlags: 0
@@ -6583,7 +6583,7 @@ PrefabInstance:
         type: 3}
       propertyPath: slider
       value: 
-      objectReference: {fileID: 808114181}
+      objectReference: {fileID: 1934954387}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d9b2c24e8b0ddf45bd82f57b4608f2b, type: 3}
 --- !u!1001 &4432922710940770213
@@ -6782,22 +6782,22 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5140658788470029407, guid: 36cca246784d33f4bb19feab72f00d2f,
+    - target: {fileID: 5140658790482471104, guid: 36cca246784d33f4bb19feab72f00d2f,
         type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5140658788470029407, guid: 36cca246784d33f4bb19feab72f00d2f,
+    - target: {fileID: 5140658790482471104, guid: 36cca246784d33f4bb19feab72f00d2f,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5140658790482471104, guid: 36cca246784d33f4bb19feab72f00d2f,
+    - target: {fileID: 1001102895214052170, guid: 36cca246784d33f4bb19feab72f00d2f,
         type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5140658790482471104, guid: 36cca246784d33f4bb19feab72f00d2f,
+    - target: {fileID: 1001102895214052170, guid: 36cca246784d33f4bb19feab72f00d2f,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
