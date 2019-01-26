@@ -41,7 +41,7 @@ public class Tidy : MonoBehaviour
         }
 
 
-        //print(minDistObj);
+
         pile parent_pile = minObj.GetComponentInParent<pile>();
         if (parent_pile != null)
         {
