@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class MessScore : MonoBehaviour
 {
+    public bool reverse = true;
+    public Slider slider;
+
     public RenderTexture dirtTex;
     public Texture2D tex;
-    public float score;
+    public int score;
 
     public float minScore = 6553;
     public float maxScore = 65536;
@@ -28,10 +31,13 @@ public class MessScore : MonoBehaviour
         }
         score = score;
     }
-    public GUIStyle style;
     void OnGUI()
     {
-        int percent = Mathf.RoundToInt((Mathf.Clamp01((score - minScore) / maxScore) * 100));
-        GUI.Label(new Rect(10, 30, 100, 50),"mess % "+ percent.ToString(), style);
+        if(slider){
+            slider.value = (score - minScore) / maxScore;
+            if(reverse){
+                slider.value = 1 - slider.value;
+            }
+        }
     }
 }
