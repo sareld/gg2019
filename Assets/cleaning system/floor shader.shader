@@ -6,6 +6,7 @@
         _MainTex ("Floor (RGB)", 2D) = "white" {}
         _DirtTex ("Dirt (RGB)", 2D) = "white" {}
         _MaskTex ("MASK (R)", 2D) = "white" {}
+        _SpecularTex ("_SpecMap (RGB)", 2D) = "white" {}
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
         _Metallic ("Metallic", Range(0,1)) = 0.0
     }
@@ -24,11 +25,13 @@
         sampler2D _MainTex;
         sampler2D _DirtTex;
         sampler2D _MaskTex;
+        sampler2D _SpecularTex;
         struct Input
         {
             float2 uv_MainTex;
             float2 uv_DirtTex;
             float2 uv_MaskTex;
+            float2 uv_SpecularTex;
         };
 
         half _Glossiness;
@@ -52,7 +55,7 @@
             o.Albedo = c.rgb;
             // Metallic and smoothness come from slider variables
             o.Metallic = _Metallic;
-            o.Smoothness = _Glossiness;
+            o.Smoothness = _Glossiness * tex2D (_SpecularTex, IN.uv_SpecularTex).r;
             o.Alpha = c.a;
         }
         ENDCG
